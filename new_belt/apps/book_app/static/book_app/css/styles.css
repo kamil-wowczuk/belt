@@ -1,0 +1,10 @@
+#register, #login {
+    width: 300px;
+    height:400px;
+    background-color: lightslategray;
+    border:3px black solid;
+    vertical-align:top;
+    display:inline-block;
+    padding:5px;
+    margin:5px;
+}

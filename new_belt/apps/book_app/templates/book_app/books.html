@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'book_app/css/styles.css' %}">
+    <title>Books</title>
+</head>
+<body>
+    <div id='header'>
+        <p>Welcome, {{ user_name }} 
+            <a href="/add">[Add book]</a> 
+            <a href="/logout">[Logout]</a>
+        </p>
+    </div>
+    <div id='book_list'>
+        <ul>
+        {% for book in books %}
+            <div class='book'>
+                <li>
+
+                    
+                    <p><a href="Remove"></a></p>
+                </li>
+            </div>
+        {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
